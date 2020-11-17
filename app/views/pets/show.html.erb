@@ -1,0 +1,10 @@
+<%= link_to "Back to all pets", pets_path %>
+<h1>Pet</h1>
+
+<ul>
+  <li>Species: <%= @pet.species %></li>
+  <li>When: <%= @pet.when %></li>
+  <li>Where: <%= @pet.where %></li>
+  <li><%= link_to "Photo", @pet.photo_url %></li>
+  <%= image_tag @pet.photo_url, alt: "Cat picture" %>
+</ul>
